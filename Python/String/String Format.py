@@ -43,3 +43,14 @@ print('WELCOME'.center((M),'-'))
 
 for j in range(N//2+2,N+1):
     print((c*(N-j)).rjust(M//2-1,'-') + c + (c*(N-j)).ljust(M//2-1,'-'))
+#second way
+N, M = map(int, input().split())
+c='.|.'
+for i in range(N//2):
+    print((c*count_1).center(M,'-'))
+    count_1=count_1+2
+print(('WELCOME').center(M,'-'))
+N=N
+for j in range(N//2):
+  print((c*(N-2)).center(M,'-'))
+  N=N-2
