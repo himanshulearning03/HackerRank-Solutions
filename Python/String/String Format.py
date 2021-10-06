@@ -33,6 +33,7 @@ Sample Designs
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 N, M = map(int, input().split())
 c='.|.'
+count_1=1
 #Upper Half
 for i in range(N//2):
     print((c*i).rjust((M//2-1),'-')+ c +(c*i).ljust((M//2-1),'-'))
